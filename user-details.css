@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* User Details Container */
+#user-details {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome Heading */
+#user-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Form Elements */
+#user-details label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+#user-details input[type="date"],
+#user-details select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Input and Select Focus State */
+#user-details input:focus,
+#user-details select:focus {
+    border-color: #fda085;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(253, 160, 133, 0.5);
+}
+
+/* Button Styles */
+#user-details button {
+    background: #fda085;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#user-details button:hover {
+    background: #f6d365;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #user-details {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    #user-details h2 {
+        font-size: 1.5rem;
+    }
+}

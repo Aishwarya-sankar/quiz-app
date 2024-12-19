@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* User Details Container */
+#user-details {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* User Details Styling */
+#user-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+}
+
+#user-details p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+#user-details strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Logout Button */
+button {
+    background: #545251;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #f6d365;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #user-details {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    #user-details h2 {
+        font-size: 1.5rem;
+    }
+
+    #user-details p {
+        font-size: 0.9rem;
+    }
+}

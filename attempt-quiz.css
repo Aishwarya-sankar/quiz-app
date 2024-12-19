@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+}
+
+/* Heading Styles */
+h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center-align the heading for Attempt Quiz */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Quiz Form Container */
+#quiz-form {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align form text to the left */
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+    margin-left: 10px; /* Align labels to the left */
+}
+
+/* Input and Radio Buttons */
+input[type="text"], input[type="radio"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Increased margin for spacing */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-left: 10px; /* Align inputs and select to the left */
+}
+
+/* Specific Styles for Select Dropdown (True/False and MCQ) */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Ensure space between dropdown and next element */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-left: 10px; /* Align select to the left */
+}
+
+/* Radio Button Alignment */
+input[type="radio"] {
+    width: auto;  /* Make radio buttons as small as possible */
+    margin-right: 10px; /* Space between radio button and label */
+    vertical-align: middle; /* Align radio buttons vertically */
+}
+
+/* Input Focus State */
+input[type="text"]:focus, input[type="radio"]:focus, select:focus {
+    border-color: #fda085;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(253, 160, 133, 0.5);
+}
+
+/* Question Container */
+.question {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align questions to the left */
+}
+
+.question h2 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.question p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Button Styles */
+button {
+    background: #fda085;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+    margin-left: 10px; /* Align buttons to the left */
+}
+
+button:hover {
+    background: #f6d365;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #quiz-form {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .question h2 {
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}

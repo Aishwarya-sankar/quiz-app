@@ -1,0 +1,111 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* Warm gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Result Container */
+.result-container {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Styling */
+.result-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fda085; /* Soft orange for heading */
+}
+
+/* Score Text */
+.result-container p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Feedback Message */
+.feedback-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f6d365; /* Light yellow-orange for feedback message */
+}
+
+/* Button Styling */
+.result-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fda085;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Emoji Animation */
+.emoji-animation {
+    font-size: 3rem;
+    animation: bounce 2s infinite ease-in-out;
+    margin: 20px 0;
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Exit Button Styling */
+.exit-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f39c6b; /* Darker orange for the exit button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.exit-button:hover {
+    background-color: #e67e22; /* Slightly darker hover state for exit button */
+}
+
+/* Button Hover Effect */
+.result-container a:hover {
+    background-color: #f39c6b;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

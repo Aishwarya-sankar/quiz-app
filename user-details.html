@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user-details.css">
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+
+
+    <div id="user-details">
+        <h2>Welcome, <span id="display-username"></span>!</h2>
+       
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+
+        <label for="age">Age:</label>
+        <select id="age">
+            <!-- Age options will be populated by JavaScript -->
+        </select>
+
+
+        <label for="role">Role:</label>
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="learner">Learner</option>
+            <option value="admin">Admin</option>
+        </select>
+
+
+        <button id="submit-details">Submit</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
